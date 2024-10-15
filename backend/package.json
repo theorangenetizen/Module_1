@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sentiment": "^5.0.2"
+  }
+}

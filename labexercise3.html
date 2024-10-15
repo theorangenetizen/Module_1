@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Module 1 Exercise 3</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        min-height: 100vh;
+        align-items: stretch;
+      }
+      .column {
+        background: goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      button {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: grey;
+      }
+      button:active {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="column" id="column1">
+        <h1 id="heading1">Hello</h1>
+        <img
+          src="https://cdn.britannica.com/70/94870-050-2ECAB6AD/Cats-Eye-nebula.jpg"
+          alt="Cat's Eye Nebula"
+          height="300px"
+          width="300px"
+        />
+        <br />
+        <button onclick="redButton()">Change Me</button>
+      </div>
+      <div class="column" id="column2">
+        <h1 id="heading2">World</h1>
+        <img
+          src="https://viewspace.org/assets/interactives/live/star_formation/eagle_nebula/Eagle-Nebula-Slider-new-multi@1x-25412a13bada170806e41272052024bc42552b3091e74e47e5a6eb2cd62abd05.jpg"
+          alt="Eagle Nebula"
+          height="300px"
+          width="300px"
+        />
+        <br />
+        <button onclick="blueButton()">Change Me</button>
+      </div>
+    </div>
+    <script>
+      function redButton() {
+        document.getElementById("column1").style.backgroundColor = "red";
+        const h1Element = document.getElementById("heading1");
+        h1Element.textContent = "Welcome";
+      }
+    </script>
+    <script>
+      function blueButton() {
+        document.getElementById("column2").style.backgroundColor = "blue";
+        const h1Element = document.getElementById("heading2");
+        h1Element.textContent = "Universe";
+      }
+    </script>
+  </body>
+</html>

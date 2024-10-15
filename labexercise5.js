@@ -1,0 +1,10 @@
+let countries = ["Spain", "France", "Germany", "England", "The Netherlands"];
+countries[1] = "Belgium";
+console.log(countries);
+countries[4] = "Andorra";
+console.log(countries);
+countries.unshift("Scotland");
+console.log(countries);
+countries.pop();
+console.log(countries);
+console.log(countries);
